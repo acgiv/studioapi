@@ -2,6 +2,7 @@
 using API.Data;
 using API.Model.Domain;
 using API.Model.DTO;
+using API.Model.Repositories;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -16,18 +17,20 @@ namespace API.Controllers
     {
         // creare variabili instaziate nell' injection
         private readonly ApiDbContext dbContext;
+        private readonly RegionRepository rigionRepository;
 
         // richimare i metodi nel parametro del contruttore e poi assegnarli come valore
-        public RegionsController(ApiDbContext dbContext)
+        public RegionsController(ApiDbContext dbContext, RegionRepository rigionRepository)
         {
             this.dbContext = dbContext;
+            this.rigionRepository = rigionRepository;
         }
 
         [HttpGet]
         [Route("getAll")]
         public async Task<IActionResult> GetAll() {
-         
-            var regionsDomain = await dbContext.Regions.ToListAsync();
+
+            var regionsDomain = await rigionRepository.GetAllAsync();
 
             var regionsDto = new List<RegionDto>();
 
@@ -48,13 +51,9 @@ namespace API.Controllers
         [Route("GetByiDRegion{id:Guid}")]
         public async Task<IActionResult> GetByiDRegion([FromRoute] Guid id)
         {
-            // altro controllo 
-            // dbContext.Regions.Find(id);
-            //dbContext.Regions.Where(elem =>  elem.Id == id).ToList();
            
 
-            var regionsDomain = await dbContext.Regions.FirstOrDefaultAsync(elem => elem.Id == id);
-
+            var regionsDomain =  await rigionRepository.GetbyIdAsync(id);
             if (regionsDomain == null) {
                 return NotFound();
             }
@@ -81,8 +80,7 @@ namespace API.Controllers
                 RegionImageUrl = addRegionRequestDto.RegionImageUrl
             };
 
-            await dbContext.Regions.AddAsync(regionDomainModel);
-            await dbContext.SaveChangesAsync();
+            regionDomainModel= await rigionRepository.insertRegionAsync(regionDomainModel);
 
             var regionsDto = new RegionDto
             {
@@ -99,17 +97,18 @@ namespace API.Controllers
         [Route("putregion{id:Guid}")]
         public async Task<IActionResult> putRegion([FromRoute] Guid id, [FromBody] PutRegionDto putRegionDto) {
 
-           var regionModal = await this.dbContext.Regions.FirstOrDefaultAsync(region => region.Id == id);
+            var regionDomainModel = new Region()
+            {
+                Code = putRegionDto.Code,
+                Name = putRegionDto.Name,
+                RegionImageUrl = putRegionDto.RegionImageUrl
+            };
+
+            var regionModal = await rigionRepository.putRegionAsync(id, regionDomainModel);
             if (regionModal == null)
             {
                 return NotFound();
-            }
-
-            regionModal.Name = putRegionDto.Name;
-            regionModal.Code = putRegionDto.Code;
-            regionModal.RegionImageUrl = putRegionDto.RegionImageUrl;
-
-           await  dbContext.SaveChangesAsync();
+            }   ;
 
             RegionDto regionDto = new RegionDto()
             {
@@ -125,13 +124,11 @@ namespace API.Controllers
         [HttpDelete]
         [Route("deleteregion{id:Guid}")]
         public async Task<IActionResult> deleteRegion([FromRoute] Guid id) {
-          var region =  await dbContext.Regions.FirstOrDefaultAsync(region => region.Id == id);
+           Region? region = await rigionRepository.delateRegionAsync(id);
             if(region == null)
             {
                 return NotFound();
             }
-            dbContext.Regions.Remove(region);
-            await dbContext.SaveChangesAsync();
 
             RegionDto regionDto = new RegionDto()
             {

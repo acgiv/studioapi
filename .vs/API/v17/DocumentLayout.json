@@ -1,0 +1,100 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\progetti\\udemy\\apic#\\API\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{44BBFAE5-6564-4DA9-B292-825D75688BA9}|API\\API.csproj|d:\\progetti\\udemy\\apic#\\api\\api\\model\\repositories\\regionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44BBFAE5-6564-4DA9-B292-825D75688BA9}|API\\API.csproj|solutionrelative:api\\model\\repositories\\regionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44BBFAE5-6564-4DA9-B292-825D75688BA9}|API\\API.csproj|d:\\progetti\\udemy\\apic#\\api\\api\\controllers\\regionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44BBFAE5-6564-4DA9-B292-825D75688BA9}|API\\API.csproj|solutionrelative:api\\controllers\\regionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44BBFAE5-6564-4DA9-B292-825D75688BA9}|API\\API.csproj|d:\\progetti\\udemy\\apic#\\api\\api\\model\\repositories\\regionrepositoryimp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44BBFAE5-6564-4DA9-B292-825D75688BA9}|API\\API.csproj|solutionrelative:api\\model\\repositories\\regionrepositoryimp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44BBFAE5-6564-4DA9-B292-825D75688BA9}|API\\API.csproj|d:\\progetti\\udemy\\apic#\\api\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44BBFAE5-6564-4DA9-B292-825D75688BA9}|API\\API.csproj|solutionrelative:api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\progetti\\udemy\\apic#\\API\\API\\Program.cs",
+              "RelativeDocumentMoniker": "API\\Program.cs",
+              "ToolTip": "D:\\progetti\\udemy\\apic#\\API\\API\\Program.cs",
+              "RelativeToolTip": "API\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-28T20:35:34.285Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RegionsController.cs",
+              "DocumentMoniker": "D:\\progetti\\udemy\\apic#\\API\\API\\Controllers\\RegionsController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\RegionsController.cs",
+              "ToolTip": "D:\\progetti\\udemy\\apic#\\API\\API\\Controllers\\RegionsController.cs",
+              "RelativeToolTip": "API\\Controllers\\RegionsController.cs",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAAAGoAAABZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-28T20:22:08.638Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RegionRepositoryImp.cs",
+              "DocumentMoniker": "D:\\progetti\\udemy\\apic#\\API\\API\\Model\\Repositories\\RegionRepositoryImp.cs",
+              "RelativeDocumentMoniker": "API\\Model\\Repositories\\RegionRepositoryImp.cs",
+              "ToolTip": "D:\\progetti\\udemy\\apic#\\API\\API\\Model\\Repositories\\RegionRepositoryImp.cs",
+              "RelativeToolTip": "API\\Model\\Repositories\\RegionRepositoryImp.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAAAAcAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-28T20:19:01.67Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RegionRepository.cs",
+              "DocumentMoniker": "D:\\progetti\\udemy\\apic#\\API\\API\\Model\\Repositories\\RegionRepository.cs",
+              "RelativeDocumentMoniker": "API\\Model\\Repositories\\RegionRepository.cs",
+              "ToolTip": "D:\\progetti\\udemy\\apic#\\API\\API\\Model\\Repositories\\RegionRepository.cs",
+              "RelativeToolTip": "API\\Model\\Repositories\\RegionRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-28T20:09:40.247Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

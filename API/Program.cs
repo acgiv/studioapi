@@ -1,4 +1,5 @@
 using API.Data;
+using API.Model.Repositories;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -10,11 +11,15 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+// inietto la configurazione del db nel calderone
 builder.Services.AddDbContext<ApiDbContext>(options=> 
 {
     options.UseSqlServer(
     builder.Configuration.GetConnectionString("Api"));
 });
+
+// chiamo i miei service
+builder.Services.AddScoped<RegionRepository, RegionRepositoryImp>();
 
 var app = builder.Build();
 
