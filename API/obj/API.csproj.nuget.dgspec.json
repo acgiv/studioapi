@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\progetti\\udemy\\apic#\\API\\API\\API.csproj": {}
+    "C:\\Users\\acecinato\\Desktop\\progetti\\progetti_studio\\studioapi\\API\\API.csproj": {}
   },
   "projects": {
-    "D:\\progetti\\udemy\\apic#\\API\\API\\API.csproj": {
+    "C:\\Users\\acecinato\\Desktop\\progetti\\progetti_studio\\studioapi\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\progetti\\udemy\\apic#\\API\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\acecinato\\Desktop\\progetti\\progetti_studio\\studioapi\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "D:\\progetti\\udemy\\apic#\\API\\API\\API.csproj",
-        "packagesPath": "C:\\Users\\ACER\\.nuget\\packages\\",
-        "outputPath": "D:\\progetti\\udemy\\apic#\\API\\API\\obj\\",
+        "projectPath": "C:\\Users\\acecinato\\Desktop\\progetti\\progetti_studio\\studioapi\\API\\API.csproj",
+        "packagesPath": "C:\\Users\\acecinato\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\acecinato\\Desktop\\progetti\\progetti_studio\\studioapi\\API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\ACER\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\acecinato\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -50,6 +50,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[9.0.1, )"
